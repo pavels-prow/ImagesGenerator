@@ -1,59 +1,59 @@
-# Images Generator: Автоматизированная Генерация Заглавных Изображений
+# Images Generator: Automated Header Image Generation
 
-- **Тип проекта**: Продукт (Web Application)
-- **Платформа**: Веб-приложение
-- **Интеграции**:
-  - Stripe (обработка платежей)
-  - RG-SVC-ImagesGenerator (генерация изображений на основе пользовательских данных)
-- **Сложность проекта**: Низкая
-- **Технологии**: 
-  - Основная: .NET
-- **Языки**: Английский язык
+- **Project Type**: Product (Web Application)
+- **Platform**: Web application
+- **Integrations**:
+  - Stripe (payment processing)
+  - RG-SVC-ImagesGenerator (image generation based on user data)
+- **Project Complexity**: Low
+- **Technologies**: 
+  - Primary: .NET
+- **Languages**: English
 
-## Описание
+## Description
 
-**Images Generator** – это веб-сервис, предназначенный для создания заглавных изображений на основе введенных пользователем данных. Сервис использует технологии машинного обучения для генерации уникальных изображений, которые соответствуют спецификации клиента.
+**Images Generator** is a web service designed to create header images based on user-entered data. The service uses machine learning technologies to generate unique images that meet client specifications.
 
-## Основные функции
+## Key Features
 
-- **Выбор акцентного цвета**: Пользователи могут выбрать основной цвет изображения, чтобы он соответствовал бренду или предпочтениям.
-- **Выбор предметной области**: С помощью выпадающего списка пользователи могут указать тематику изображения (например, "парфюмерия" или "красота").
-- **Указание дополнительных деталей**: В поле ввода пользователь может указать дополнительные детали, которы будут учитываться при генерации изображений.
+- **Accent Color Selection**: Users can select a primary color for the image to match their brand or preference.
+- **Subject Area Selection**: A dropdown menu allows users to specify the image's theme (e.g., "perfumery" or "beauty").
+- **Additional Details**: Users can enter additional details in an input field, which are taken into account during image generation.
 
-## Модель монетизации
+## Monetization Model
 
-Пользователи оплачивают услугу заранее, 99 центов за 64 изображения. Возможно стоит рассмотреть возможность выбора из двух предложений. 99 центов и 49 центов.
+Users pay for the service upfront, 99 cents for 64 images. It's worth considering offering two pricing options: 99 cents and 49 cents.
 
-## Целевая аудитория
+## Target Audience
 
-Предприниматели, маркетологи, дизайнеры и любые другие профессионалы или любители, которым требуются уникальные изображения для маркетинговых кампаний, социальных медиа, статей, лендингов и других целей.
+Entrepreneurs, marketers, designers, and any other professionals or hobbyists who need unique images for marketing campaigns, social media, articles, landing pages, and other purposes.
 
-## Вспомогательные материалы
+## Supporting Materials
 
-- [Процесс со стороны пользователя](./docs/user-workflow.md)
-- [Предметные области](./docs/subject-areas.md)
+- [User Workflow](./docs/user-workflow.md)
+- [Subject Areas](./docs/subject-areas.md)
 
-## Цикл разработки
+## Development Cycle
 
-1. Домашняя страница
-2. Выбор параметров
-3. Страница оплаты
-4. Генерация изображений
-5. Страница результатов
+1. Home Page
+2. Parameter Selection
+3. Payment Page
+4. Image Generation
+5. Results Page
 
-## Итерации разработки
+## Development Iterations
 
 1. [Proof of Concept](./docs/iteration-1.md) `Dev-done`
-2. [Микросервис для генерации изображений](./docs/iteration-2.md)
-3. [Интеграция со Stripe](./docs/iteration-3.md)
+2. [Image Generation Microservice](./docs/iteration-2.md)
+3. [Stripe Integration](./docs/iteration-3.md)
 
-## Идеи и заметки
+## Ideas and Notes
 
-- Определение более конкретной целевой аудитории может помочь в создании более целенаправленного и эффективного продукта.
-- Добавить возможность делиться проектам в социальных медия. Можно спрашивать, получили ли вы то, что хотели? И в случае положительного ответа, просить публиковать это в социальных медиа.
-- Включите информацию о команде разработчиков, их опыте и мотивации за созданием этого проекта. Это поможет установить доверие и личную связь с вашими пользователями.
+- Defining a more specific target audience could help create a more focused and effective product.
+- Add a feature for sharing projects on social media. Ask users if they achieved their desired result, and if so, encourage them to share it on social media.
+- Include information about the development team, their experience, and their motivation for creating this project. This can help build trust and a personal connection with your users.
 
-## Инструкции и документы
+## Instructions and Documentation
 
-- [Настройка проекта .NET Razor Pages, VueJs и WebPack](./docs/how-to-setup-project/readme.md)
-- [Как добавить Bootsrtap 5 в проект](./docs/how-to-add-bootstrap.md)
+- [Setting Up .NET Razor Pages, VueJs, and WebPack](./docs/how-to-setup-project/readme.md)
+- [How to Add Bootstrap 5 to the Project](./docs/how-to-add-bootstrap.md)
