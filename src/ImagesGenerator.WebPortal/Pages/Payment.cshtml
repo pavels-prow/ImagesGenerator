@@ -1,0 +1,19 @@
+﻿@page "/payment/{orderUid?}"
+@model ImagesGenerator.WebPortal.Pages.PaymentModel
+
+<h1>Оплата</h1>
+
+@if (!string.IsNullOrEmpty(Model.BusinessDescription) ||
+  !string.IsNullOrEmpty(Model.SelectedColor) ||
+  !string.IsNullOrEmpty(Model.SelectedArea))
+{
+    <p>Описание бизнеса: @Model.BusinessDescription</p>
+    <p>Выбранный цвет: @Model.SelectedColor</p>
+    <p>Выбранная предметная область: @Model.SelectedArea</p>
+}
+else
+{
+    <p>Информация о запросе не найдена или истекло время её хранения.</p>
+}
+
+<a class="btn btn-primary btn-lg" href="@Model.SuccessUrl">Оплатить</a>

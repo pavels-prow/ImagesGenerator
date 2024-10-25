@@ -1,0 +1,52 @@
+﻿@page
+@model IndexModel
+
+@section Hero {
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="/hero-1.png" alt="" width="400" height="400">
+        <h1 class="display-5 fw-bold text-body-emphasis">Мастерская изображений</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+                Создавайте уникальные изображения для брендинга, соцсетей и рекламы.
+                Выбирайте цвета, темы и детали – быстро и просто.
+                Отличное решение для предпринимателей и креативщиков.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a class="btn btn-primary btn-lg px-4 gap-3" href="@Url.Setup()">Начать создание</a>
+                <a class="btn btn-outline-secondary btn-lg px-4" href="#learn-more">Узнать больше</a>
+            </div>
+        </div>
+    </div>
+    <hr />
+}
+
+<style>
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; /* Отступы между изображениями */
+    }
+
+    .image-gallery img {
+        max-width: 100%;
+        height: auto;
+        max-height: 200px; /* Максимальная высота каждого изображения */
+    }
+</style>
+
+<section id="learn-more" class="container my-5">
+    <div class="col-12">
+        <h2>Примеры наших работ</h2>
+        <p class="lead mb-4">Здесь представлены примеры изображений, сгенерированных нашим сервисом.</p>
+    </div>
+    <div class="image-gallery">
+        @for (int i = 0; i < 100; i++)
+        {
+            <img src="https://source.unsplash.com/random/300x200?sig=@i" alt="Пример изображения">
+        }
+    </div>
+    <div class="text-center mt-4">
+        <a class="btn btn-primary btn-lg" href="@Url.Setup()">Начать создание</a>
+    </div>
+</section>
